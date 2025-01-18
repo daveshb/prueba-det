@@ -1,0 +1,48 @@
+.table {
+    width: 100%;
+  
+    &--full-width {
+      width: 100%;
+    }
+  
+    &--bordered {
+      border: 1px solid #ccc;
+    }
+  
+    &__head {
+      background-color: #f9f9f9;
+    }
+  
+    &__row {
+      &--header {
+        background-color: #f1f1f1;
+        font-weight: bold;
+      }
+  
+      &--clickable {
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  
+    &__cell {
+      padding: 4px;
+      border: 1px solid #ccc;
+  
+      &--header {
+        text-align: left;
+      }
+  
+      &--data {
+        text-align: left;
+      }
+  
+      &--actions {
+        text-align: center;
+        font-style: italic;
+      }
+    }
+  }
